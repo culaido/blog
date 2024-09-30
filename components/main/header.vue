@@ -20,7 +20,7 @@
                     <NuxtLink to="/blog">Blog</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/categories">Categories</NuxtLink>
+                    <NuxtLink to="/category">Categories</NuxtLink>
                 </li>
                 <li>
                     <NuxtLink to="/about">About Me</NuxtLink>
