@@ -17,7 +17,7 @@
             </ul>
             <ul class="flex items-center space-x-3 sm:space-x-6 text-sm sm:text-lg">
                 <li>
-                    <NuxtLink to="/blogs">Blogs</NuxtLink>
+                    <NuxtLink to="/blog">Blog</NuxtLink>
                 </li>
                 <li>
                     <NuxtLink to="/categories">Categories</NuxtLink>
