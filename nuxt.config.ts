@@ -11,7 +11,9 @@ export default defineNuxtConfig({
         pageTransition: { name: 'page', mode: 'out-in' },
         layoutTransition: { name: 'layout', mode: 'out-in' }
     },
-    
+    build: {
+        transpile: ['shiki'],
+    },
     site: {
         url: 'https://abc.com',
         identity: {
