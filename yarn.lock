@@ -7721,6 +7721,11 @@ vue-bundle-renderer@^2.1.0:
   dependencies:
     ufo "^1.5.4"
 
+vue-content-loader@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/vue-content-loader/-/vue-content-loader-2.0.1.tgz#c6a3ff0e653671e5e8cff9e0c3814e6d04d3411d"
+  integrity sha512-pkof4+q2xmzNEdhqelxtJejeP/vQUJtLle4/v2ueG+HURqM9Q/GIGC8GJ2bVVWeLfTDET51jqimwQdmxJTlu0g==
+
 vue-demi@>=0.14.10, vue-demi@>=0.14.8:
   version "0.14.10"
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.14.10.tgz#afc78de3d6f9e11bf78c55e8510ee12814522f04"
