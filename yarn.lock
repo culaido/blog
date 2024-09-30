@@ -674,6 +674,13 @@
   resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.1.1.tgz#b9da6a878a371829a0502c9b6c1c143ef6663f4d"
   integrity sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==
 
+"@iconify-json/icon-park@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@iconify-json/icon-park/-/icon-park-1.2.0.tgz#5cbb7894d3b217137e1f2a0fc7093c835b7cd4f4"
+  integrity sha512-p+ixbzvVNrpA9X4nSGQKyylbl1YBtpUUiJdDKnPzKO80UukbGd4nAX5aZf0sMr/ubT1vt7SdX5nS5zd7u1t3HA==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify/collections@^1.0.455":
   version "1.0.465"
   resolved "https://registry.yarnpkg.com/@iconify/collections/-/collections-1.0.465.tgz#db16cc09632866f4695ea8760f93b260ccad85b4"
