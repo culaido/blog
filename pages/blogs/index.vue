@@ -1,31 +1,31 @@
 <script lang="ts" setup>
-    const data = await queryContent('work').find()
+    const data = await queryContent('blog').find();
 
     useHead({
-      title: 'Archive'
+        title: 'Blog'
+    });
+
+
+
+    const elementPerPage = ref(5);
+    const pageNumber = ref(1);
+    const searchTest = ref('');
+
+    const formattedData = computed(() => {
+      return data.value?.map((articles) => {
+        return {
+          path: articles._path,
+          title: articles.title || 'no-title available',
+          description: articles.description || 'no-description available',
+          image: articles.image || '/not-found.jpg',
+          alt: articles.alt || 'no alter data available',
+          ogImage: articles.ogImage || '/not-found.jpg',
+          date: articles.date || 'not-date-available',
+          tags: articles.tags || [],
+          published: articles.published || false,
+        }
+      }) || []
     })
-
-
-
-    const elementPerPage = ref(5)
-    const pageNumber = ref(1)
-    const searchTest = ref('')
-
-const formattedData = computed(() => {
-  return data.value?.map((articles) => {
-    return {
-      path: articles._path,
-      title: articles.title || 'no-title available',
-      description: articles.description || 'no-description available',
-      image: articles.image || '/not-found.jpg',
-      alt: articles.alt || 'no alter data available',
-      ogImage: articles.ogImage || '/not-found.jpg',
-      date: articles.date || 'not-date-available',
-      tags: articles.tags || [],
-      published: articles.published || false,
-    }
-  }) || []
-})
 console.log(formattedData);
 const searchData = computed(() => {
   return formattedData.value.filter((data) => {
@@ -61,15 +61,6 @@ function onNextPageClick() {
 <template>
   <main class="container max-w-5xl mx-auto text-zinc-600">
     <ArchiveHero />
-
-    <div class="px-6">
-      <input
-        v-model="searchTest"
-        placeholder="Search"
-        type="text"
-        class="block w-full bg-[#F1F2F4] dark:bg-slate-900 dark:placeholder-zinc-500 text-zinc-300  rounded-md border-gray-300 dark:border-gray-800 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-      >
-    </div>
 
     <ClientOnly>
       <div v-auto-animate class="space-y-5 my-5 px-4">

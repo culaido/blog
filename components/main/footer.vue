@@ -1,15 +1,9 @@
-<script setup lang="ts">
-const route = useRoute()
-
-const path = computed(() => route.fullPath.replace('/', ''))
-</script>
-
 <template>
-  <div class="py-5 dark:border-gray-800  mt-5 text-zinc-700 dark:text-zinc-300">
-      <div class="border-t dark:border-gray-800 mt-5 text-center p-2">
-        © 2020-2024 No Right is reserved.
-      </div>
-  </div>
+    <div class="py-5 dark:border-gray-800 mt-5 text-zinc-700 dark:text-zinc-300">
+        <div class="border-t dark:border-gray-800 mt-5 text-center p-2">
+            © 2020-2024 No Right is reserved.
+        </div>
+    </div>
 </template>
 
 <style>

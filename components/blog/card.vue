@@ -50,7 +50,7 @@ withDefaults(defineProps<Props>(), {
           {{ title }}
         </h2>
         <p class="text-ellipsis line-clamp-2 text-base">
-          {{ description }}
+            description: {{ description }}
         </p>
         <div class="flex group-hover:underline text-sky-700 dark:text-sky-400 items-center py-2">
           <p>Read More</p>
